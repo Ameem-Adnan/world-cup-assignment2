@@ -2,6 +2,7 @@ body {
     padding: 0;
     margin: 0;
     text-align: center;
+    font-family: 'Poppins', sans-serif;
 }
 
 header,
@@ -69,7 +70,7 @@ main {
     max-height: 205px;
 }
 
-.sidebar>button {
+.sidebar button {
     background-color: white;
     padding: 15px;
     margin: 10px 0;
@@ -77,6 +78,12 @@ main {
     border: 2px solid rgba(128, 128, 128, 0.301);
 
 }
+
+.sidebar a {
+    text-decoration: none;
+    color: black;
+}
+
 
 #active {
     background-color: red;
@@ -93,7 +100,7 @@ main {
     text-align: start;
     margin: 15px;
     padding: 0;
-    border: 1px solid black;
+    border: 1px solid rgb(207, 207, 207);
     border-radius: 10px;
 
 }
@@ -167,7 +174,7 @@ footer {
 
 .footerlinks>p {
     padding: 0 20px;
-    font-size: 10px;
+    font-size: 15px;
     color: rgb(177, 177, 177);
 }
 

@@ -1,0 +1,286 @@
+body {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+header,
+main {
+    max-width: 1280px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.banner {
+    background-color: black;
+    color: white;
+    padding: 0 15px;
+    margin: 15px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+
+}
+
+.bannertext {
+    width: 50%;
+    padding: 15px;
+    text-align: justify;
+    height: 100%;
+}
+
+.bannertext>h1 {
+    font-size: 45px;
+}
+
+.bannertext>button {
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+    padding-top: 10px;
+}
+
+.bannerimage {
+    width: 45%;
+
+}
+
+.bannerimage>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    vertical-align: middle;
+}
+
+main {
+    display: flex;
+}
+
+.sidebar {
+    background-color: black;
+    padding: 15px;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    min-width: 150px;
+    border-radius: 5px;
+    max-height: 205px;
+}
+
+.sidebar button {
+    background-color: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 2px solid rgba(128, 128, 128, 0.301);
+
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: black;
+}
+
+#active {
+    background-color: red;
+    color: white;
+    border: none;
+}
+
+.allblogs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.blog {
+    /* text-align: center; */
+    margin: 15px;
+    padding: 0;
+    border: 1px solid rgb(207, 207, 207);
+    border-radius: 10px;
+    padding: 10px;
+
+
+
+}
+
+
+.flags {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.flags>img {
+    width: 40%;
+}
+
+.flags>span {
+    padding: 0 10px;
+}
+
+.blogbody>span {
+    border: 2px solid black;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.blogbody>h3 {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.blogbody>h5 {
+    font-weight: 400;
+    font-size: 14px;
+    color: rgb(48, 48, 48);
+}
+
+.blogicons {
+    display: flex;
+    margin-right: 0;
+}
+
+.icon {
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.icon>p {
+    margin-left: 10px;
+}
+
+#tabletbutton {
+    border: none;
+    color: white;
+    background-color: red;
+    padding: 10px 15px;
+    font-size: 20px;
+    width: 150px;
+    border-radius: 5px;
+    margin: 15px 0;
+    visibility: hidden;
+}
+
+footer {
+    padding: 50px 35px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    margin-top: 30px;
+}
+
+#line {
+    border: 1px solid #80808065;
+}
+
+.footerlinks {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.footerlinks>p {
+    padding: 0 20px;
+    font-size: 15px;
+    color: rgb(177, 177, 177);
+}
+
+@media screen and (max-width: 992px) {
+    main {
+        flex-direction: column;
+
+    }
+
+    .sidebar {
+        background-color: white;
+        flex-direction: row;
+        width: auto;
+        max-height: 100%;
+        justify-content: space-between;
+
+
+    }
+
+    .sidebar>button {
+        width: 32%;
+
+    }
+
+    .allblogs {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+    #tabletbutton {
+        visibility: visible;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    main {
+        flex-direction: column;
+
+    }
+
+    .banner {
+        flex-direction: column;
+    }
+
+    .bannertext {
+        height: 50%;
+        width: 100%;
+        text-align: center;
+    }
+
+    .bannertext>h1 {
+        font-size: 36px;
+    }
+
+    .bannerimage {
+        height: 50%;
+        width: 100%;
+    }
+
+    .sidebar {
+        background-color: white;
+        flex-direction: column;
+        width: auto;
+        max-height: 100%;
+
+
+    }
+
+    .sidebar>button {
+        width: 100%;
+        font-size: 24px;
+        font-weight: 700;
+        border-radius: 10px;
+
+    }
+
+    .allblogs {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+
+    #tabletbutton {
+        visibility: hidden;
+    }
+
+    .footerlinks {
+        flex-direction: column;
+
+    }
+
+    .footerlinks>p {
+        font-size: 16px;
+    }
+}
